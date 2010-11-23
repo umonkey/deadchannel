@@ -66,6 +66,7 @@ a {
   padding-left: 60px;
   margin-left: 100px;
   max-width: 800px;
+  line-height: 1.5em;
 }
 #content #page > p {
   margin-right: 60px;
@@ -86,18 +87,17 @@ a {
   font-family: "Georgia", "Times", serif;
   font-size: 70px;
   color: #c6bfbe;
-  margin: -52px 0 0 -36px;
+  margin: -22px 0 0 -36px;
 }
 
 #page ul {
   margin-left: 0;
   padding-left: 0;
-  list-style-type: square;
 }
 
 #page img[align=right] {
   max-width: 300px;
-  margin: 0 0 10px 10px;
+  margin: 0 40px 10px 10px;
   border: solid 1px #ccc;
 }
 
