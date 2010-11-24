@@ -11,6 +11,8 @@
     <link rel="alternate" type="application/rss+xml" title="Все записи" href="/rss.xml"/>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
     <script type="text/javascript" src="/scripts.js"></script>
+    <!-- Парсер CleverCSS пока не справляется с юникодом и кавычками, поэтому вынес сюда. -->
+    <style type="text/css">#content blockquote p:first-child:before { content: '„'; }</style>
   </head>
   <body>
     <div id="wrapper">
