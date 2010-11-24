@@ -33,9 +33,6 @@ a {
   height: 50px;
   color: #c0c0c0;
 }
-#header a {
-  color: #8080c4;
-}
 #header h1 {
   font: 22px/1 Ubuntu, sans-serif;
   margin: 0;
@@ -64,7 +61,7 @@ a {
   line-height: 12px;
 }
 #header li a {
-  color: #008;
+  color: #8080c4;
 }
 
 #content h1,

@@ -24,10 +24,6 @@ a {
   color: #c0c0c0;
 }
 
-#header a {
-  color: #8080c4;
-}
-
 #header h1 {
   font: 22px Ubuntu, sans-serif;
   line-height: 1em;
@@ -62,7 +58,7 @@ a {
 }
 
 #header ul li a {
-  color: #000088;
+  color: #8080c4;
 }
 
 #content {
