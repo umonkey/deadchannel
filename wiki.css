@@ -1,0 +1,127 @@
+body {
+	font-family: Ubuntu, sans-serif;
+	line-height: 1.5em;
+	background-color: white;
+}
+
+#pb {
+	border: none;
+}
+#pb h1, #pb h2 {
+	font: 22px "PT Sans Narrow", "Trebuchet MS", sans-serif;
+	padding: 0;
+	border: none;
+}
+
+#tabs, #tabs .active {
+	border: none;
+	background-image: none;
+}
+#tabs {
+	padding: 0;
+	text-align: right;
+	float: right;
+	margin-top: 1em;
+	margin-right: 30px;
+}
+#tabs li a {
+	text-decoration: underline;
+}
+#tabs .active a {
+	color: black;
+	text-decoration: none;
+}
+
+#page {
+	max-width: 800px;
+	margin: 60px auto 0;
+}
+#page .categories {
+	margin-left: -8px;
+}
+
+#pb {
+	border: none;
+	padding-left: 60px;
+}
+#pb > p {
+	margin-right: 60px;
+}
+#pb blockquote {
+	margin-left: -60px;
+	background-color: #eceaea;
+	padding: 4px 0;
+	border-left: 1px solid #d9d4d3;
+}
+#pb blockquote p {
+	margin-left: 60px;
+	margin-right: 20px;
+}
+#pb blockquote p:first-child:before {
+	position: absolute; // для того, чтобы расположение текста не зависело от положения этой штуки
+	font-family: "Georgia", "Times", serif;
+	font-size: 70px;
+	color: #c6bfbe;
+	margin-top: -20px;
+	margin-left: -40px;
+	content: '„';
+}
+
+
+#header {
+	display: none;
+}
+#footer #fh {
+	position: absolute;
+	top: 10px;
+	margin-left: 60px;
+	height: 50px;
+	color: #c0c0c0;
+}
+#footer #fh h2 {
+	font: 22px Ubuntu, sans-serif;
+	line-height: 1em;
+	margin: 0;
+}
+#footer #fh h2 a {
+	color: inherit;
+	text-decoration: none;
+}
+#footer #fh ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 12px;
+	left: 300px;
+	width: 400px;
+	text-align: right;
+}
+#footer #fh li {
+	display: inline-block;
+	margin-left: 2em;
+	font-size: 12px;
+	line-height: 12px;
+}
+#footer #fh li a {
+	color: #8080c4;
+}
+#footer #fh li.active a {
+	color: gray;
+	text-decoration: none;
+}
+
+
+#footer {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0;
+}
+#footer p {
+	margin-left: 60px;
+}
+
+
+#sidebar {
+	display: none;
+}
