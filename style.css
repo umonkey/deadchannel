@@ -31,8 +31,10 @@ a {
   position: relative;
   margin-left: 60px;
   height: 50px;
-  color: gray;
-  opacity: 0.5; /* TODO: replace with real colours! */
+  color: #c0c0c0;
+}
+#header a {
+  color: #8080c4;
 }
 #header h1 {
   font: 22px/1 Ubuntu, sans-serif;
@@ -172,7 +174,10 @@ a {
 #footer {
   margin-left: 60px;
   padding: 50px 0 10px;
-  opacity: 0.5;
+  color: #c0c0c0;
+}
+#footer a {
+  color: #8080c4;
 }
 
 
