@@ -95,7 +95,8 @@ a {
   padding-left: 0;
 }
 
-#page img[align=right] {
+#page img.right {
+  float: right;
   max-width: 300px;
   margin: 0 40px 10px 10px;
   border: solid 1px #ccc;
