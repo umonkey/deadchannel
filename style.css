@@ -19,6 +19,7 @@ body {
 
 a {
   color: #008;
+  outline: none;
 }
 
 #wrapper {
@@ -27,6 +28,7 @@ a {
 }
 
 #header {
+  position: relative;
   margin-left: 60px;
   height: 50px;
   color: gray;
@@ -49,8 +51,8 @@ a {
   padding: 0;
   position: absolute;
   top: 12px;
-  left: 400px;
-  width: 464px;
+  left: 300px;
+  width: 400px;
   text-align: right;
 }
 #header li {
