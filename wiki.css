@@ -1,7 +1,10 @@
 body {
-	font-family: Ubuntu, sans-serif;
-	line-height: 1.5em;
+	font: 10pt/15pt Ubuntu, sans-serif;
 	background-color: white;
+}
+
+a {
+	color: #008;
 }
 
 #pb {
@@ -13,22 +16,25 @@ body {
 	border: none;
 }
 
-#tabs, #tabs .active {
-	border: none;
-	background-image: none;
-}
 #tabs {
 	padding: 0;
 	text-align: right;
 	float: right;
 	margin-top: 1em;
 	margin-right: 30px;
+	font-size: 85%;
+	color: #c0c0c0;
+}
+#tabs li {
+	display: inline;
+	margin-left: 1em;
 }
 #tabs li a {
+	color: #8080c4;
 	text-decoration: underline;
 }
 #tabs .active a {
-	color: black;
+	color: inherit;
 	text-decoration: none;
 }
 
@@ -71,6 +77,22 @@ body {
 #header {
 	display: none;
 }
+
+
+#footer {
+	max-width: 800px;
+	margin: 50px auto 0;
+	padding: 0;
+	color: #c0c0c0;
+}
+#footer a {
+	color: #8080c4;
+}
+#footer p {
+	margin-left: 60px;
+}
+
+
 #footer #fh {
 	position: absolute;
 	top: 10px;
@@ -109,16 +131,6 @@ body {
 #footer #fh li.active a {
 	color: gray;
 	text-decoration: none;
-}
-
-
-#footer {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 0;
-}
-#footer p {
-	margin-left: 60px;
 }
 
 
