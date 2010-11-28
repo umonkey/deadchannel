@@ -23,7 +23,7 @@ a {
 	margin-top: 1em;
 	margin-right: 30px;
 	font-size: 85%;
-	color: #c0c0c0;
+	color: gray;
 }
 #tabs li {
 	display: inline;
@@ -83,7 +83,8 @@ a {
 	max-width: 800px;
 	margin: 50px auto 0;
 	padding: 0;
-	color: #c0c0c0;
+	color: gray;
+	font-size: 90%;
 }
 #footer a {
 	color: #8080c4;
@@ -135,5 +136,23 @@ a {
 
 
 #sidebar {
-	display: none;
+	position: absolute;
+	top: 88px;
+	left: 10px;
+	width: 140px;
+	color: gray;
+	font-size: 90%;
+}
+#sidebar a {
+	color: #8080c4;
+}
+#sidebar h3 {
+	font-size: 1em;
+	margin: 1.5em 0 .5em;
+	border-bottom: solid 1px #c0c0c0;
+}
+#sidebar ul {
+	margin: .5em 0;
+	padding: 0;
+	list-style-type: none;
 }
