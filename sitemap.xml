@@ -183,4 +183,11 @@
     <priority>0.8</priority>
 </url>
 
+<url>
+    <loc>http://beta.deadchannel.ru/reviews/the-pulsar-never.html</loc>
+    <lastmod>2010-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+
 </urlset>
