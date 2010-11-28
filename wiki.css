@@ -17,11 +17,10 @@ a {
 }
 
 #tabs {
+	margin: 0;
 	padding: 0;
 	text-align: right;
 	float: right;
-	margin-top: 1em;
-	margin-right: 30px;
 	font-size: 85%;
 	color: gray;
 }
