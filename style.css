@@ -195,9 +195,18 @@ a {
 }
 
 .news li {
-  margin-left: 80px;
+  margin: 0 0 1em 80px;
   position: relative;
   min-height: 60px;
+  line-height: 1.25em;
+}
+
+.news li p {
+  margin: 0;
+}
+
+.news li a {
+  text-decoration: none;
 }
 
 .news li img {
@@ -205,4 +214,20 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.news li .links {
+  margin: 0;
+}
+
+.news li .links a {
+  color: gray;
+  text-decoration: underline;
+  font-size: 80%;
+  margin-right: 1em;
+}
+
+img.illustration {
+  max-width: 300px;
+  max-height: 300px;
 }
