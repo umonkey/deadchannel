@@ -193,3 +193,16 @@ a {
   margin-top: 50px;
   max-width: 740px;
 }
+
+.news li {
+  margin-left: 80px;
+  position: relative;
+  min-height: 60px;
+}
+
+.news li img {
+  margin-left: -80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
