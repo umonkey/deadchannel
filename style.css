@@ -8,8 +8,23 @@ body {
 }
 
 a {
-  color: #000088;
+  color: #002455;
   outline: none;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ff5223;
+}
+
+.fakelink {
+  color: #002455;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fakelink:hover {
+  color: #ff5223;
 }
 
 #wrapper {
@@ -72,6 +87,15 @@ a {
   font: 22px 'PT Sans Narrow', 'Trebuchet MS', sans-serif;
   line-height: 1em;
   margin: .5em 0;
+}
+
+#content h1 small,
+#content h2 small {
+  font-size: 10pt;
+  color: green;
+  margin-left: 1em;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #content h3 {
@@ -194,19 +218,20 @@ a {
   max-width: 740px;
 }
 
+.news {
+  margin-top: 2em;
+}
+
 .news li {
-  margin: 0 0 1em 80px;
+  margin: 0 60px 1em 80px;
   position: relative;
   min-height: 60px;
+  font-size: 12pt;
   line-height: 1.25em;
 }
 
 .news li p {
   margin: 0;
-}
-
-.news li a {
-  text-decoration: none;
 }
 
 .news li img {
@@ -223,11 +248,23 @@ a {
 .news li .links a {
   color: gray;
   text-decoration: underline;
-  font-size: 80%;
+  font-size: 8pt;
   margin-right: 1em;
 }
 
 img.illustration {
   max-width: 300px;
   max-height: 300px;
+}
+
+#submit {
+  display: none;
+}
+
+#submit textarea {
+  width: 100%;
+  height: 100px;
+  margin: .5em 0;
+  padding: 4px;
+  font-family: sans-serif;
 }
