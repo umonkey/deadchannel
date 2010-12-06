@@ -256,9 +256,14 @@ a:hover {
   margin-right: 1em;
 }
 
-img.illustration {
+img .illustration {
   max-width: 300px;
   max-height: 300px;
+}
+
+img .right {
+  float: right;
+  margin: 0 0 .5em .5em;
 }
 
 #submit {
