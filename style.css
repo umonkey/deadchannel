@@ -261,11 +261,6 @@ img .illustration {
   max-height: 300px;
 }
 
-img .right {
-  float: right;
-  margin: 0 0 .5em .5em;
-}
-
 #submit {
   display: none;
 }
