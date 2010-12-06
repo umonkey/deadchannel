@@ -82,20 +82,24 @@ a:hover {
   line-height: 1.5em;
 }
 
-#content h1,
-#content h2 {
+#content h1 {
   font: 22px 'PT Sans Narrow', 'Trebuchet MS', sans-serif;
   line-height: 1em;
   margin: .5em 0;
 }
 
-#content h1 small,
-#content h2 small {
+#content h1 small {
   font-size: 10pt;
   color: green;
   margin-left: 1em;
   text-decoration: underline;
   cursor: pointer;
+}
+
+#content h2 {
+  font: 20px 'PT Sans Narrow', 'Trebuchet MS', sans-serif;
+  line-height: 1em;
+  margin: .5em 0;
 }
 
 #content h3 {
