@@ -143,7 +143,7 @@ a:hover {
   padding-left: 0;
 }
 
-#page img.right {
+#page .right {
   float: right;
   max-width: 300px;
   margin: 0 40px 10px 10px;
