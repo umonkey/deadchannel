@@ -401,6 +401,13 @@
 </url>
 
 <url>
+    <loc>http://beta.deadchannel.ru/news/20101225.151614.html</loc>
+    <lastmod>2010-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<url>
     <loc>http://beta.deadchannel.ru/news/index.html</loc>
     <lastmod>2010-12-25</lastmod>
     <changefreq>monthly</changefreq>
