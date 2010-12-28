@@ -422,6 +422,13 @@
 </url>
 
 <url>
+    <loc>http://www.deadchannel.ru/news/20101228.223857.html</loc>
+    <lastmod>2010-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<url>
     <loc>http://www.deadchannel.ru/news/index.html</loc>
     <lastmod>2010-12-28</lastmod>
     <changefreq>monthly</changefreq>
