@@ -330,7 +330,7 @@ def once_sitemap():
             url = BASE_URL + '/' + url
             urls.append(_SITEMAP_URL % (url, date,
                 p.get("changefreq", "monthly"), p.get("priority", "0.8")))
-    fname = os.path.join(options.project, "output", "sitemap.xml")
+    fname = os.path.join(options.project, "..", "sitemap.xml")
     fp = open(fname, 'w')
     fp.write(_SITEMAP % "".join(urls))
     fp.close()
