@@ -1,0 +1,5 @@
+.pagelist { margin: 0; padding: 0; list-style-type: none; }
+.pagelist li { margin: .5em 0; }
+.pagelist span { margin-right: .5em; color: gray; }
+
+blockquote { margin: 1em 0; padding: 0; background-color: #ccc; }

@@ -1,0 +1,247 @@
+// Я ваще не дизайнер, поэтому некоторые вещи потырил отсюда:
+//   http://pepelsbey.net/2008/04/semantic-coding-1/
+// За что всем спасибо. :)
+//
+// Что мешает использовать этот файл:
+// 1. CleverCSS не понимает конструкции вида: content: 'X'.  Кавычки удаляет,
+//    от юникодных символов возникают исключения.
+//
+// @author justin.forest@gmail.com (Justin Forest)
+
+// Спасибо Яндекс.Новостям за эти цвета.
+link_color = #002455
+link_hover_color = #ff5223
+
+body:
+  background-color: white;
+  color: black;
+  font-family: Ubuntu, sans-serif;
+  font-size: 10pt;
+  margin: 0;
+  padding: 10px 0;
+
+a:
+  color: $link_color
+  outline: none;
+  text-decoration: underline
+
+  &:hover:
+    color: $link_hover_color
+
+.fakelink:
+  color: $link_color
+  text-decoration: underline
+  cursor: pointer;
+
+  &:hover:
+    color: $link_hover_color
+
+#wrapper:
+  max-width: 800px;
+  margin: 0 auto;
+
+#header:
+  margin-left: 60px;
+  height: 50px;
+  position: relative;
+  color: #c0c0c0;
+
+  h1:
+    font: 22px Ubuntu, sans-serif;
+    line-height: 1em;
+    margin: 0;
+
+    a:
+      color: inherit;
+      text-decoration: none;
+
+  h2:
+    display: none;
+
+  ul:
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 12px;
+    left: 300px;
+    width: 400px;
+    text-align: right;
+
+    li:
+      display: inline-block;
+      margin-left: 2em;
+      font-size: 12px;
+      line-height: 12px;
+
+      a:
+        color: #8080c4;
+
+#content:
+  padding-left: 60px;
+  max-width: 800px;
+  line-height: 1.5em;
+
+  h1:
+    font: 22px "PT Sans Narrow", "Trebuchet MS", sans-serif;
+    line-height: 1em;
+    margin: .5em 0;
+
+    small:
+      font-size: 10pt;
+      color: green;
+      margin-left: 1em;
+      text-decoration: underline;
+      cursor: pointer;
+
+  h2:
+    font: 20px "PT Sans Narrow", "Trebuchet MS", sans-serif;
+    line-height: 1em;
+    margin: .5em 0;
+
+  h3:
+    font: 18px "PT Sans Narrow", "Trebuchet MS", sans-serif;
+    line-height: 1em;
+    margin: 1em 0 .5em;
+
+  .meta:
+    font-size: 80%;
+    color: gray;
+
+#page:
+  &> p:
+    margin-right: 60px;
+
+  blockquote:
+    margin-left: -60px;
+    background-color: #eceaea;
+    padding: 4px 0;
+    border-left:1px solid #d9d4d3;
+
+    p:
+      margin-left: 60px;
+      margin-right: 20px;
+
+      &:first-child:before:
+        position: absolute; // для того, чтобы расположение текста не зависело от положения этой штуки
+        font-family: "Georgia", "Times", serif;
+        font-size: 70px;
+        color: #c6bfbe;
+        margin-top: -20px;
+        margin-left: -40px;
+
+  ul:
+    margin-left: 0;
+    padding-left: 0;
+
+  .right:
+    float: right;
+    max-width: 300px;
+    margin: 0 40px 10px 10px;
+    border: solid 1px #ccc;
+
+
+.pagelist:
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  .date:
+    display: inline-block;
+    color: gray;
+    font-size: 80%;
+    width: 55px;
+    text-align: right;
+    margin-left: -60px;
+    margin-right: 5px;
+
+  li a:
+    font-size: 110%;
+
+
+#tcloud:
+  background-color: #eee;
+  width: 200px;
+  float: right;
+  margin: -40px 38px 0 20px;
+  padding: 4px 4px 4px 10px;
+
+  h2:
+    margin: 0 0 .5em;
+
+  ul:
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li:
+      display: inline-block;
+      width: 100px;
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 0 0 4px;
+      color: #ccc; // ссылки выводятся нормальным синим цветом
+      font-size: 8pt;
+
+      a:
+        font-size: 10pt;
+
+  p:
+    padding-top: 4px;
+    border-top: solid 1px #ccc;
+
+#footer:
+  margin-left: 60px;
+  padding: 50px 0 10px;
+  color: #c0c0c0;
+
+  a:
+    color: #8080c4;
+
+#cwrapper:
+  margin-top: 50px;
+  max-width: 740px;
+
+
+.news:
+  margin-top: 2em;
+
+.news li:
+  margin: 0 60px 1em 80px;
+  position: relative;
+  min-height: 60px;
+  font-size: 12pt;
+  line-height: 1.25em;
+
+  p:
+    margin: 0;
+
+  img:
+    margin-left: -80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  .links:
+    margin: 0;
+
+    a:
+      color: gray;
+      text-decoration: underline;
+      font-size: 8pt;
+      margin-right: 1em;
+
+img:
+  .illustration:
+    max-width: 300px;
+    max-height: 300px;
+
+#submit:
+  display: none;
+
+  textarea:
+    width: 100%;
+    height: 100px;
+    margin: .5em 0;
+    padding: 4px;
+    font-family: sans-serif;
