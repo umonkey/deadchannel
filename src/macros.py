@@ -490,7 +490,7 @@ def hook_postconvert_rss():
 def embed(page):
     if 'file' in page and page.file.endswith('.mp3'):
         furl = urllib.quote(page.file)
-        return '<audio src="'+ page.file +'" controls="controls"><object type="application/x-shockwave-flash" width="300" height="20" data="/player.swf?file=' + furl + '&amp;width=300&amp;height=20&amp;controlbar=bottom"><param name="movie" value="' + furl + '" /><param name="wmode" value="window" /></object></audio>'
+        return '<object type="application/x-shockwave-flash" data="/files/player.swf" width="200" height="20"><param name="movie" value="/files/player.swf"/><param name="bgcolor" value="#eeeeee"/><param name="FlashVars" value="mp3=%s&amp;buttoncolor=000000&amp;slidercolor=000000&amp;loadingcolor=808080"/></object>' % escape(page.file)
     return ''
 
 def comments(page):
