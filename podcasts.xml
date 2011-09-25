@@ -6,8 +6,23 @@
 <generator>Poole</generator>
 <title>Dead Channel: podcasts</title>
 <link>http://www.deadchannel.ru/podcasts/index.html</link>
-<pubDate>Sun, 25 Sep 2011 12:43:17 -0000</pubDate>
-<lastBuildDate>Sun, 25 Sep 2011 12:43:17 -0000</lastBuildDate>
+<pubDate>Sun, 25 Sep 2011 15:12:22 -0000</pubDate>
+<lastBuildDate>Sun, 25 Sep 2011 15:12:22 -0000</lastBuildDate>
+<item>
+	<title>DCP №21: о формате диджейства</title>
+	<link>http://www.deadchannel.ru/podcasts/dcp/21/index.html</link>
+	<description>&lt;p&gt;Темы:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;О разогревающих диджейских сетах.&lt;/li&gt;
+&lt;li&gt;Добавление в сет интерактива.&lt;/li&gt;
+&lt;li&gt;Пляшущие светодиоды.&lt;/li&gt;
+&lt;/ul&gt;</description>
+	<pubDate>Sun, 25 Sep 2011 08:00:00 -0000</pubDate>
+	<guid>http://www.deadchannel.ru/podcasts/dcp/21/index.html</guid>
+	<enclosure url="http://files.umonkey.net/audio/podcast/dcp/dcp-21.mp3" type="audio/mpeg"/>
+	<category>podcast</category>
+	<category>podcasts</category>
+</item>
 <item>
 	<title>DCP №20: о посещаемости и формате мероприятий</title>
 	<link>http://www.deadchannel.ru/podcasts/dcp/20/index.html</link>

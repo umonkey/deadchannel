@@ -488,10 +488,26 @@ def hook_postconvert_rss():
         write_rss(pages, u'Dead Channel: ' + label, u'Материал из раздела «%s» сайта Dead Channel.' % label, label)
 
 def embed(page):
-    if 'file' in page and page.file.endswith('.mp3'):
+    if "file" not in page:
+        return ""
+    if not page["file"].endswith(".mp3"):
+        return ""
+
+    if "illustration" not in page:
         furl = urllib.quote(page.file)
         return '<object type="application/x-shockwave-flash" data="/files/player.swf" width="200" height="20"><param name="movie" value="/files/player.swf"/><param name="bgcolor" value="#eeeeee"/><param name="FlashVars" value="mp3=%s&amp;buttoncolor=000000&amp;slidercolor=000000&amp;loadingcolor=808080"/></object>' % escape(page.file)
-    return ''
+
+    parts = (page.get("illustration") + " 400 300").split(" ")
+
+    return file("player.html", "rb").read().decode("utf-8") % {
+        "illustration": parts[0],
+        "width": parts[1],
+        "height": parts[2],
+        "podcast": page["file"],
+        "description": page["title"],
+        "author": "hex",
+        "duration": page.get("duration"),
+    }
 
 def comments(page):
     if 'labels' in page or is_news_page(page):
