@@ -280,25 +280,6 @@ def page_title(page, h='h2'):
     return u''
 
 
-def page_meta(page):
-    """
-    Выводит метаданные страницы: дату, автора.
-    """
-    parts = []
-    if 'date' in page:
-        parts.append(datetime.strptime(page['date'], '%Y-%m-%d').strftime('%d.%m.%y'))
-    if 'file' in page:
-        parts.append(u'<a href="%s">скачать</a>' % page['file'])
-    labels = get_post_labels(page)
-    if len(labels):
-        parts.append(u', '.join([u'<a class="tag" href="%s">%s</a>' % (get_label_url(tag), get_label_text(tag)) for tag in labels]))
-    if 'author' in page:
-        parts.append(u'автор: ' + page['author'])
-    if parts:
-        return u'<p class="meta">%s</p>' % u'; '.join(parts)
-    return u''
-
-
 def youtube(video_id):
     # высота: 300 + 35 на контролы
     return u'<iframe class="youtube-player" type="text/html" ' + \

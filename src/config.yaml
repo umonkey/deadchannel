@@ -17,12 +17,12 @@ authors:
 
 labels:
 - name: podcast
-  title: подкаст
+  title: подкасты
   link: /podcasts/
   rss_file: podcasts.xml
   rss_title: "Подкаст Dead Channel"
   rss_description: "Мысли и интервью на тему тёмной сцены."
-- name: interview
+- name: interviews
   title: интервью
   link: /interviews/
   rss_file: interviews.xml
