@@ -1,7 +1,7 @@
 title: Интервью с Project-X
 labels: interviews
 date: 2006-05-24
-author: hex
+author: umonkey
 source: http://web.archive.org/web/20060626164431/deadchannel.ru/2006/05/24/project-x-interview.ru
 ---
 [Project-X](http://www.discogs.com/artist/Project-X) — шведская команда,

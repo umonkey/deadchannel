@@ -1,7 +1,7 @@
 title: Интервью с Front Line Assembly
 labels: interviews
 date: 2006-10-18
-author: hex
+author: umonkey
 source: http://web.archive.org/web/20071025161050/deadchannel.ru/story/1250
 ---
 Front Line Assembly, перед своим первым приездом в Россию, согласились ответить

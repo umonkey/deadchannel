@@ -1,7 +1,7 @@
 title: Крупнейший суперкомпьютер оказался в руках злоумышленников
 date: 2007-09-04
 labels: articles
-author: hex
+author: umonkey
 source: http://web.archive.org/web/20071119010041/deadchannel.ru/story/2451
 ---
 Крупнейший в истории человечества [суперкомпьютер][super] был запущен в конце

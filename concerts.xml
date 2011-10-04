@@ -1,13 +1,16 @@
 <?xml version="1.0"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
 <channel>
+<atom:link href="http://www.deadchannel.ru/concerts.xml" rel="self" type="application/rss+xml"/>
 <language>ru-RU</language>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<itunes:category text="Society &amp; Culture"/>
 <generator>Poole</generator>
-<title>Dead Channel: concerts</title>
-<link>http://www.deadchannel.ru/concerts/index.html</link>
-<pubDate>Tue, 04 Oct 2011 15:27:45 -0000</pubDate>
-<lastBuildDate>Tue, 04 Oct 2011 15:27:45 -0000</lastBuildDate>
+<title>Отчёты о концертах</title>
+<description>Отчёты, написанные для Dead Channel.</description>
+<link>http://www.deadchannel.ru/concerts/</link>
+<pubDate>Thu, 17 Feb 2011 21:00:00 -0000</pubDate>
+<lastBuildDate>Thu, 17 Feb 2011 21:00:00 -0000</lastBuildDate>
 <item>
 	<title>Отчёт о питерском концерте Combichrist</title>
 	<link>http://www.deadchannel.ru/concerts/combichrist-spb-2011.html</link>
@@ -51,9 +54,10 @@ AG.  К чему эта игра в напёрстки, почему нельз
 клубом «Космонавт», могу порекомендовать поискать в Ютубе &lt;a href="http://youtu.be/RXWFTvkh0GQ"&gt;запись концерта
 Combichrist в Екатеринбурге&lt;/a&gt;, клуб «Теле-2».  В Питере я клубов такого
 уровня не знаю.  Видно, что сибиряки для себя старались.&lt;/p&gt;</description>
-	<pubDate>Fri, 18 Feb 2011 09:00:00 -0000</pubDate>
+	<pubDate>Thu, 17 Feb 2011 21:00:00 -0000</pubDate>
 	<guid>http://www.deadchannel.ru/concerts/combichrist-spb-2011.html</guid>
 	<category>concerts</category>
+	<author>hex@umonkey.net (umonkey)</author>
 </item>
 <item>
 	<title>DCP №19: о концерте Sector 516</title>
@@ -117,11 +121,12 @@ Sector 516, хотя и играют тот же синтипоп, зацепи�
 &lt;p&gt;Всё это я высказал им после концерта, но решил зафиксировать здесь.  После
 концерта они были не совсем в форме и вряд ли наутро вспомнили хотя бы половину
 сказанного.  Здесь это можно всегда прочитать.&lt;/p&gt;</description>
-	<pubDate>Sat, 11 Sep 2010 08:00:00 -0000</pubDate>
+	<pubDate>Fri, 10 Sep 2010 20:00:00 -0000</pubDate>
 	<guid>http://www.deadchannel.ru/podcasts/dcp-19-sector-516.html</guid>
-	<enclosure url="http://files.mirkforce.net/justin.forest/2010/09/19/dcp-19-20100911.mp3" type="audio/mpeg"/>
-	<category>concerts</category>
+	<enclosure url="http://files.mirkforce.net/justin.forest/2010/09/19/dcp-19-20100911.mp3" type="audio/mpeg" length="1"/>
 	<category>podcasts</category>
+	<category>concerts</category>
+	<author>hex@umonkey.net (umonkey)</author>
 </item>
 <item>
 	<title>Отчёт о московском концерте Oomph!</title>
@@ -279,9 +284,10 @@ Oomph!&amp;nbsp; еще не видели&amp;nbsp;— люди буквальн
 &lt;li&gt;Калинка&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;em&gt;Этот материал раньше находился &lt;a href="http://web.archive.org/web/20071119011816/deadchannel.ru/story/1952"&gt;по другому адресу&lt;/a&gt;, там могут быть комментарии.&lt;/em&gt;&lt;/p&gt;</description>
-	<pubDate>Mon, 23 Apr 2007 08:00:00 -0000</pubDate>
+	<pubDate>Sun, 22 Apr 2007 20:00:00 -0000</pubDate>
 	<guid>http://www.deadchannel.ru/concerts/oomps-moscow.html</guid>
 	<category>concerts</category>
+	<author>hex@umonkey.net (umonkey)</author>
 </item>
 </channel>
 </rss>

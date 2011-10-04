@@ -1,6 +1,6 @@
 title: Пираты наносят лэйблам ответный удар
 date: 2007-09-23
-author: hex
+author: umonkey
 labels: articles
 source: http://web.archive.org/web/20071110115212/deadchannel.ru/story/2489
 ---

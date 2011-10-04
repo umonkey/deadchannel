@@ -1,7 +1,7 @@
 title: Интервью с The-Pulsar: мы победим!
 labels: interviews
 date: 2007-03-23
-author: hex
+author: umonkey
 source: http://web.archive.org/web/20071024164157/deadchannel.ru/story/1815
 ---
 «Venceremos!» — под таким слоганом проходила Кубинская Революция, под таким же

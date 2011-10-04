@@ -1,13 +1,16 @@
 <?xml version="1.0"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
 <channel>
+<atom:link href="http://www.deadchannel.ru/knowledge.xml" rel="self" type="application/rss+xml"/>
 <language>ru-RU</language>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<itunes:category text="Society &amp; Culture"/>
 <generator>Poole</generator>
-<title>Dead Channel: knowledge</title>
-<link>http://www.deadchannel.ru/knowledge/index.html</link>
-<pubDate>Tue, 04 Oct 2011 15:27:45 -0000</pubDate>
-<lastBuildDate>Tue, 04 Oct 2011 15:27:45 -0000</lastBuildDate>
+<title>Ликбез от Dead Channel</title>
+<description>Информационные статьи от Dead Channel.</description>
+<link>http://www.deadchannel.ru/knowledge/</link>
+<pubDate>Wed, 12 Apr 2006 20:00:00 -0000</pubDate>
+<lastBuildDate>Wed, 12 Apr 2006 20:00:00 -0000</lastBuildDate>
 <item>
 	<title>Земля, пропитанная кровью</title>
 	<link>http://www.deadchannel.ru/knowledge/grendel-soilbleed.html</link>
@@ -59,9 +62,10 @@ The pain and the anguish, we're planting the seeds&amp;nbsp; &lt;/p&gt;
 («Scapegoat»), Numb («Eugene»), Combichrist («This Is My Rifle») и у многих
 других, чьи произведения наверняка хорошо всем известны.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Этот материал раньше находился &lt;a href="http://web.archive.org/web/20071023183018/deadchannel.ru/story/932"&gt;по другому адресу&lt;/a&gt;, там могут быть комментарии.&lt;/em&gt;&lt;/p&gt;</description>
-	<pubDate>Thu, 13 Apr 2006 08:00:00 -0000</pubDate>
+	<pubDate>Wed, 12 Apr 2006 20:00:00 -0000</pubDate>
 	<guid>http://www.deadchannel.ru/knowledge/grendel-soilbleed.html</guid>
 	<category>knowledge</category>
+	<author>hex@umonkey.net (umonkey)</author>
 </item>
 </channel>
 </rss>

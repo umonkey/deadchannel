@@ -1,0 +1,48 @@
+base_url: "http://www.deadchannel.ru/"
+title: Dead Channel
+description: Сайт о тёмной сцене.
+language: ru_RU
+disqus_id: deadchannel
+comment_labels: [blog, podcast, video]
+
+flattr_name: umonkey
+flattr_labels: [blog, video, podcast]
+
+authors:
+- name: umonkey
+  email: hex@umonkey.net
+  profile: "https://profiles.google.com/justin.forest/about"
+- name: jeteir
+  email: jeteir@gmail.com
+
+labels:
+- name: podcast
+  title: подкаст
+  link: /podcasts/
+  rss_file: podcasts.xml
+  rss_title: "Подкаст Dead Channel"
+  rss_description: "Мысли и интервью на тему тёмной сцены."
+- name: interview
+  title: интервью
+  link: /interviews/
+  rss_file: interviews.xml
+  rss_title: "Интервью для Dead Channel"
+  rss_description: "Интервью с деятелями тёмной сцены."
+- name: articles
+  title: статьи
+  link: /articles/
+  rss_file: articles.xml
+  rss_title: "Статьи для Dead Channel"
+  rss_description: "Статьи, написанные специально для Dead Channel."
+- name: knowledge
+  title: ликбез
+  link: /knowledge/
+  rss_file: knowledge.xml
+  rss_title: "Ликбез от Dead Channel"
+  rss_description: "Информационные статьи от Dead Channel."
+- name: concerts
+  title: отчёты
+  link: /concerts/
+  rss_file: concerts.xml
+  rss_title: "Отчёты о концертах"
+  rss_description: "Отчёты, написанные для Dead Channel."

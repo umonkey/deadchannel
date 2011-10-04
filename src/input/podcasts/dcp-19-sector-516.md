@@ -2,7 +2,7 @@ title: DCP №19: о концерте Sector 516
 date: 2010-09-11
 labels: podcasts, concerts
 file: http://files.mirkforce.net/justin.forest/2010/09/19/dcp-19-20100911.mp3
-author: hex
+author: umonkey
 ---
 
 10 сентября в новом питерском клубе «Космонавт» играли команды [Sector 516][sec]

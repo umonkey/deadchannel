@@ -1,7 +1,7 @@
 title: Отчёт о питерском концерте Combichrist
 date: 2011-02-18
 labels: concerts
-author: hex
+author: umonkey
 ---
 <iframe title="YouTube video player" width="560" height="349" src="http://www.youtube.com/embed/10TQQ3aJX6Q?rel=0" frameborder="0" allowfullscreen></iframe>
 

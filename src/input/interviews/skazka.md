@@ -1,7 +1,7 @@
 title: Интервью с Вячеславом Бусыгиным (Skazka)
 labels: interviews
 date: 2010-12-23
-author: hex
+author: umonkey
 email: hex@umonkey.net
 ---
 [Слава Бусыгин][fb] — лидер группы [Wavefall][] — отвечает на вопросы о своём

@@ -3,7 +3,7 @@ date: 2011-06-07
 labels: podcast
 file: http://files.umonkey.net/audio/podcast/dcp/dcp-20.mp3
 filesize: 10337547
-author: hex
+author: umonkey
 ---
 - О посещаемости мероприятий и их формате.
 - Музыканты должны сами собирать своих поклонников.

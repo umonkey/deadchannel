@@ -1,6 +1,6 @@
 title: DCP №21: о формате диджейства
 date: 2011-09-25
-author: hex
+author: umonkey
 labels: podcast, interviews
 file: http://files.umonkey.net/audio/podcast/dcp/dcp-21.mp3
 filesize: 11188519

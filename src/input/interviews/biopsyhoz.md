@@ -1,7 +1,7 @@
 title: Интервью с Сергеем Шубиным
 labels: interviews
 date: 2007-01-06
-author: hex
+author: umonkey
 source: http://web.archive.org/web/20071025161209/deadchannel.ru/story/1605
 ---
 Биопсихоз — одна из наиболее сильных и заметных команд на русской индустриальной

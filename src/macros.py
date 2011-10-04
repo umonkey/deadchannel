@@ -14,8 +14,9 @@ import sys
 import urllib
 import urlparse
 
-# Base for sitemap and RSS, where absolute URLs are used.
-BASE_URL = 'http://www.deadchannel.ru'
+import poolemonkey
+
+poolemonkey.init(globals())
 
 page = { 'title': 'untitled page' }
 
@@ -81,7 +82,7 @@ def get_tag_cloud(posts):
         text = label
         if tagtitles.has_key(text):
             text = tagtitles[text]
-        output += u'<li><a href="%s">%s</a> (%u)</li>' % (get_label_url(label), text, labels[label])
+        output += u'<li><a href="%s">%s</a> (%u)</li>' % (shorturl(get_label_url(label)), text, labels[label])
     output += u'</ul>'
     output += u'<p class="sub">Можно <a href="http://feedburner.google.com/fb/a/mailverify?uri=deadchannel/exclusive&amp;loc=ru_RU">получать обновления по электронной почте</a>.</p>'
     output += u'</div>'
@@ -305,113 +306,6 @@ def youtube(video_id):
         u'src="http://www.youtube.com/embed/' + unicode(video_id) + \
         u'" frameborder="0"></iframe>'
 
-_SITEMAP = """<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-%s
-</urlset>
-"""
-
-_SITEMAP_URL = """
-<url>
-    <loc>%s</loc>
-    <lastmod>%s</lastmod>
-    <changefreq>%s</changefreq>
-    <priority>%s</priority>
-</url>
-"""
-
-def once_sitemap():
-    """Generate Google sitemap.xml file."""
-    date = datetime.strftime(datetime.now(), "%Y-%m-%d")
-    urls = []
-    for p in pages:
-        url = p.url
-        if '://' not in url:
-            url = BASE_URL + '/' + url
-            urls.append(_SITEMAP_URL % (url, date,
-                p.get("changefreq", "monthly"), p.get("priority", "0.8")))
-    fname = os.path.join(options.project, "..", "sitemap.xml")
-    fp = open(fname, 'w')
-    fp.write(_SITEMAP % "".join(urls))
-    fp.close()
-
-# -----------------------------------------------------------------------------
-# generate rss feed
-# -----------------------------------------------------------------------------
-
-import email.utils
-import time
-
-_RSS = u"""<?xml version="1.0"?>
-<rss version="2.0">
-<channel>
-<title>%s</title>
-<link>%s</link>
-<description>%s</description>
-<language>ru-RU</language>
-<pubDate>%s</pubDate>
-<lastBuildDate>%s</lastBuildDate>
-<docs>http://blogs.law.harvard.edu/tech/rss</docs>
-<generator>Poole</generator>
-%s
-</channel>
-</rss>
-"""
-
-def write_rss(pages, title, description, label=None):
-    base = BASE_URL
-
-    xml = u'<?xml version="1.0"?>\n'
-    xml += u'<rss version="2.0">\n'
-    xml += u'<channel>\n'
-    xml += u'<language>ru-RU</language>\n'
-    xml += u'<docs>http://blogs.law.harvard.edu/tech/rss</docs>\n'
-    xml += u'<generator>Poole</generator>\n'
-    xml += u'<title>%s</title>\n' % escape(title)
-    if label is None:
-        xml += u'<link>%s/</link>\n' % base
-    else:
-        xml += u'<link>%s%s</link>\n' % (base, get_label_url(label))
-    date = email.utils.formatdate()
-    xml += u'<pubDate>%s</pubDate>\n' % date
-    xml += u'<lastBuildDate>%s</lastBuildDate>\n' % date
-
-    # leave only blog posts
-    pages = [p for p in pages if p.has_key('labels') and p.has_key('date') and '://' not in p.url]
-    # filter by label
-    if label is not None:
-        pages = [p for p in pages if label in get_post_labels(p)]
-    # sort by date
-    pages.sort(key=lambda p: p.date, reverse=True)
-    # process first 10 items
-    for p in pages[0:10]:
-        xml += u'<item>\n'
-        xml += u'\t<title>%s</title>\n' % escape(p['title'])
-        link = u"%s/%s" % (BASE_URL, p.url)
-        xml += u'\t<link>%s</link>\n' % link
-        xml += u'\t<description>%s</description>\n' % escape(p.html)
-        date = time.mktime(time.strptime("%s 12" % p.date, "%Y-%m-%d %H"))
-        xml += u'\t<pubDate>%s</pubDate>\n' % email.utils.formatdate(date)
-        xml += u'\t<guid>%s</guid>\n' % link
-        if p.has_key('file'):
-            mime_type = mimetypes.guess_type(urlparse.urlparse(p.file).path)[0]
-            xml += u'\t<enclosure url="%s" type="%s"/>\n' % (p.file, mime_type)
-        for l in get_post_labels(p):
-            xml += u'\t<category>%s</category>\n' % l
-        xml += u'</item>\n'
-
-    xml += u'</channel>\n'
-    xml += u'</rss>\n'
-
-    if label is None:
-        filename = 'rss.xml'
-    else:
-        filename = label.replace(' ', '_') + '.xml'
-    print "info   : writing %s" % filename
-    fp = open(os.path.join(output, filename), 'w')
-    fp.write(xml.encode('utf-8'))
-    fp.close()
-
 
 def hook_preconvert_sources():
     """
@@ -481,11 +375,6 @@ def mktoc(text):
     if len(toc):
         text = text.replace('[TOC]', '<ul id="toc">%s</ul>' % toc)
     return text
-
-def hook_postconvert_rss():
-    write_rss(pages, u'Dead Channel', u'Exclusive stuff.')
-    for label in get_label_stats(pages).keys():
-        write_rss(pages, u'Dead Channel: ' + label, u'Материал из раздела «%s» сайта Dead Channel.' % label, label)
 
 def embed(page):
     if "file" not in page:

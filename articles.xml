@@ -1,13 +1,16 @@
 <?xml version="1.0"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
 <channel>
+<atom:link href="http://www.deadchannel.ru/articles.xml" rel="self" type="application/rss+xml"/>
 <language>ru-RU</language>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<itunes:category text="Society &amp; Culture"/>
 <generator>Poole</generator>
-<title>Dead Channel: articles</title>
-<link>http://www.deadchannel.ru/articles/index.html</link>
-<pubDate>Tue, 04 Oct 2011 15:27:45 -0000</pubDate>
-<lastBuildDate>Tue, 04 Oct 2011 15:27:45 -0000</lastBuildDate>
+<title>Статьи для Dead Channel</title>
+<description>Статьи, написанные специально для Dead Channel.</description>
+<link>http://www.deadchannel.ru/articles/</link>
+<pubDate>Sat, 22 Sep 2007 20:00:00 -0000</pubDate>
+<lastBuildDate>Sat, 22 Sep 2007 20:00:00 -0000</lastBuildDate>
 <item>
 	<title>Пираты наносят лэйблам ответный удар</title>
 	<link>http://www.deadchannel.ru/articles/pirate-bay-strikes-back.html</link>
@@ -53,9 +56,10 @@ MD.  Среди этих компаний&amp;nbsp;— 20й Век Фокс, So
 парламенте партию организовали, так её и назвав: The Pirate Party, «пиратская
 партия».&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Этот материал раньше находился &lt;a href="http://web.archive.org/web/20071110115212/deadchannel.ru/story/2489"&gt;по другому адресу&lt;/a&gt;, там могут быть комментарии.&lt;/em&gt;&lt;/p&gt;</description>
-	<pubDate>Sun, 23 Sep 2007 08:00:00 -0000</pubDate>
+	<pubDate>Sat, 22 Sep 2007 20:00:00 -0000</pubDate>
 	<guid>http://www.deadchannel.ru/articles/pirate-bay-strikes-back.html</guid>
 	<category>articles</category>
+	<author>hex@umonkey.net (umonkey)</author>
 </item>
 <item>
 	<title>Крупнейший суперкомпьютер оказался в руках злоумышленников</title>
@@ -155,9 +159,10 @@ networks and had no central point from which it could be disabled.&lt;/p&gt;
 занимающейся сетевой безопасностью, общий объём ботнетов, на данный момент
 использующих технологию fast-flux, составляет примерно 50 миллионов машин.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Этот материал раньше находился &lt;a href="http://web.archive.org/web/20071119010041/deadchannel.ru/story/2451"&gt;по другому адресу&lt;/a&gt;, там могут быть комментарии.&lt;/em&gt;&lt;/p&gt;</description>
-	<pubDate>Tue, 04 Sep 2007 08:00:00 -0000</pubDate>
+	<pubDate>Mon, 03 Sep 2007 20:00:00 -0000</pubDate>
 	<guid>http://www.deadchannel.ru/articles/storm.html</guid>
 	<category>articles</category>
+	<author>hex@umonkey.net (umonkey)</author>
 </item>
 </channel>
 </rss>

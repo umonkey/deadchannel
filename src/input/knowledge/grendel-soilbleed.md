@@ -1,7 +1,7 @@
 title: Земля, пропитанная кровью
 labels: knowledge
 date: 2006-04-13
-author: hex
+author: umonkey
 source: http://web.archive.org/web/20071023183018/deadchannel.ru/story/932
 ---
 Сегодня мы поговорим о голландском harsh-EBM проекте [Grendel][] и песне

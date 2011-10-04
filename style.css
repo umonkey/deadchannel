@@ -156,6 +156,10 @@ a:hover {
   list-style-type: none;
 }
 
+.pagelist p {
+  margin: 0;
+}
+
 .pagelist .date {
   display: inline-block;
   color: gray;
@@ -166,8 +170,17 @@ a:hover {
   margin-right: 5px;
 }
 
+.pagelist li {
+  margin: 0 0 .5em;
+}
+
 .pagelist li a {
   font-size: 110%;
+}
+
+.pagelist .summary {
+  color: gray;
+  margin: 0 0 .5em;
 }
 
 #tcloud {

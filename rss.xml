@@ -1,32 +1,36 @@
 <?xml version="1.0"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
 <channel>
+<atom:link href="http://www.deadchannel.ru/rss.xml" rel="self" type="application/rss+xml"/>
 <language>ru-RU</language>
 <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<itunes:category text="Society &amp; Culture"/>
 <generator>Poole</generator>
 <title>Dead Channel</title>
+<description>Сайт о тёмной сцене.</description>
 <link>http://www.deadchannel.ru/</link>
-<pubDate>Tue, 04 Oct 2011 15:27:45 -0000</pubDate>
-<lastBuildDate>Tue, 04 Oct 2011 15:27:45 -0000</lastBuildDate>
+<pubDate>Sat, 24 Sep 2011 20:00:00 -0000</pubDate>
+<lastBuildDate>Sat, 24 Sep 2011 20:00:00 -0000</lastBuildDate>
 <item>
 	<title>DCP №21: о формате диджейства</title>
-	<link>http://www.deadchannel.ru/podcasts/dcp/21/index.html</link>
+	<link>http://www.deadchannel.ru/podcasts/dcp/21/</link>
 	<description>&lt;p&gt;Темы:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;О разогревающих диджейских сетах.&lt;/li&gt;
 &lt;li&gt;Добавление в сет интерактива.&lt;/li&gt;
 &lt;li&gt;Пляшущие светодиоды.&lt;/li&gt;
 &lt;/ul&gt;</description>
-	<pubDate>Sun, 25 Sep 2011 08:00:00 -0000</pubDate>
+	<pubDate>Sat, 24 Sep 2011 20:00:00 -0000</pubDate>
 	<guid>http://www.deadchannel.ru/podcasts/dcp/21/index.html</guid>
-	<enclosure url="http://files.umonkey.net/audio/podcast/dcp/dcp-21.mp3" type="audio/mpeg"/>
-	<category>interviews</category>
+	<enclosure url="http://files.umonkey.net/audio/podcast/dcp/dcp-21.mp3" type="audio/mpeg" length="11188519"/>
 	<category>podcast</category>
-	<category>podcasts</category>
+	<category>interviews</category>
+	<author>hex@umonkey.net (umonkey)</author>
+	<itunes:image href="http://files.umonkey.net/audio/podcast/dcp/dcp-21.jpg 500 375"/>
 </item>
 <item>
 	<title>DCP №20: о посещаемости и формате мероприятий</title>
-	<link>http://www.deadchannel.ru/podcasts/dcp/20/index.html</link>
+	<link>http://www.deadchannel.ru/podcasts/dcp/20/</link>
 	<description>&lt;ul&gt;
 &lt;li&gt;О посещаемости мероприятий и их формате.&lt;/li&gt;
 &lt;li&gt;Музыканты должны сами собирать своих поклонников.&lt;/li&gt;
@@ -34,11 +38,11 @@
 &lt;li&gt;Об отсутствии понимания причины, по которой люди приходят.&lt;/li&gt;
 &lt;li&gt;Об отсутствии тёмной культуры как таковой.&lt;/li&gt;
 &lt;/ul&gt;</description>
-	<pubDate>Tue, 07 Jun 2011 08:00:00 -0000</pubDate>
+	<pubDate>Mon, 06 Jun 2011 20:00:00 -0000</pubDate>
 	<guid>http://www.deadchannel.ru/podcasts/dcp/20/index.html</guid>
-	<enclosure url="http://files.umonkey.net/audio/podcast/dcp/dcp-20.mp3" type="audio/mpeg"/>
+	<enclosure url="http://files.umonkey.net/audio/podcast/dcp/dcp-20.mp3" type="audio/mpeg" length="10337547"/>
 	<category>podcast</category>
-	<category>podcasts</category>
+	<author>hex@umonkey.net (umonkey)</author>
 </item>
 <item>
 	<title>Отчёт о питерском концерте Combichrist</title>
@@ -83,9 +87,10 @@ AG.  К чему эта игра в напёрстки, почему нельз
 клубом «Космонавт», могу порекомендовать поискать в Ютубе &lt;a href="http://youtu.be/RXWFTvkh0GQ"&gt;запись концерта
 Combichrist в Екатеринбурге&lt;/a&gt;, клуб «Теле-2».  В Питере я клубов такого
 уровня не знаю.  Видно, что сибиряки для себя старались.&lt;/p&gt;</description>
-	<pubDate>Fri, 18 Feb 2011 09:00:00 -0000</pubDate>
+	<pubDate>Thu, 17 Feb 2011 21:00:00 -0000</pubDate>
 	<guid>http://www.deadchannel.ru/concerts/combichrist-spb-2011.html</guid>
 	<category>concerts</category>
+	<author>hex@umonkey.net (umonkey)</author>
 </item>
 <item>
 	<title>Рецензия на дебютный альбом RU.ARE</title>
@@ -158,9 +163,10 @@ Effect.&amp;nbsp; Достигнув припева, трэк получает �
 &amp;nbsp; (torrent)&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://bit.ly/cTBefq"&gt;Скачать альбом&lt;/a&gt; (ZIP архив)&lt;/li&gt;
 &lt;/ul&gt;</description>
-	<pubDate>Thu, 30 Dec 2010 09:00:00 -0000</pubDate>
+	<pubDate>Wed, 29 Dec 2010 21:00:00 -0000</pubDate>
 	<guid>http://www.deadchannel.ru/reviews/ruare.html</guid>
 	<category>reviews</category>
+	<author>hex@umonkey.net (umonkey)</author>
 </item>
 <item>
 	<title>Интервью с Вячеславом Бусыгиным (Skazka)</title>
@@ -313,9 +319,10 @@ Wavefall&amp;nbsp;— это абсолютно разные миры, кото�
 &lt;li&gt;&lt;a href="http://www.chaindlk.com/reviews/?id=5612"&gt;Рецензия на «Fairy Tale» от Chain D.L.K.&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.tempestrecording.com/"&gt;Tempest Recording&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-	<pubDate>Thu, 23 Dec 2010 09:00:00 -0000</pubDate>
+	<pubDate>Wed, 22 Dec 2010 21:00:00 -0000</pubDate>
 	<guid>http://www.deadchannel.ru/interviews/skazka.html</guid>
 	<category>interviews</category>
+	<author>hex@umonkey.net (umonkey)</author>
 </item>
 <item>
 	<title>Интервью с Вааваном (Repus Tuto Matos, Black Room Community)</title>
@@ -586,9 +593,10 @@ BRF я часто встречаю старых тусовщиков, всегд
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://wiki.deadchannel.ru/Интервью_Repus_Tuto_Matos_сайту_rivethead.ru"&gt;Интервью сайту rivethead.ru&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-	<pubDate>Mon, 06 Dec 2010 09:00:00 -0000</pubDate>
+	<pubDate>Sun, 05 Dec 2010 21:00:00 -0000</pubDate>
 	<guid>http://www.deadchannel.ru/interviews/repus.html</guid>
 	<category>interviews</category>
+	<author>hex@umonkey.net (umonkey)</author>
 </item>
 <item>
 	<title>Интервью с Сергеем Воробьёвым (Hired Life)</title>
@@ -825,9 +833,10 @@ Coil&lt;/a&gt;», &lt;a href="http://www.myspace.com/elevenrus"&gt;ELEVEN&lt;/a&
 &lt;li&gt;&lt;a href="/podcasts/dcp-17-hired-life.html"&gt;Dead Channel Podcast #17&lt;/a&gt; (Dead Channel,
 &amp;nbsp; 2009)&lt;/li&gt;
 &lt;/ul&gt;</description>
-	<pubDate>Tue, 02 Nov 2010 09:00:00 -0000</pubDate>
+	<pubDate>Mon, 01 Nov 2010 21:00:00 -0000</pubDate>
 	<guid>http://www.deadchannel.ru/interviews/hired-life.html</guid>
 	<category>interviews</category>
+	<author>hex@umonkey.net (umonkey)</author>
 </item>
 <item>
 	<title>DCP №19: о концерте Sector 516</title>
@@ -891,11 +900,12 @@ Sector 516, хотя и играют тот же синтипоп, зацепи�
 &lt;p&gt;Всё это я высказал им после концерта, но решил зафиксировать здесь.  После
 концерта они были не совсем в форме и вряд ли наутро вспомнили хотя бы половину
 сказанного.  Здесь это можно всегда прочитать.&lt;/p&gt;</description>
-	<pubDate>Sat, 11 Sep 2010 08:00:00 -0000</pubDate>
+	<pubDate>Fri, 10 Sep 2010 20:00:00 -0000</pubDate>
 	<guid>http://www.deadchannel.ru/podcasts/dcp-19-sector-516.html</guid>
-	<enclosure url="http://files.mirkforce.net/justin.forest/2010/09/19/dcp-19-20100911.mp3" type="audio/mpeg"/>
-	<category>concerts</category>
+	<enclosure url="http://files.mirkforce.net/justin.forest/2010/09/19/dcp-19-20100911.mp3" type="audio/mpeg" length="1"/>
 	<category>podcasts</category>
+	<category>concerts</category>
+	<author>hex@umonkey.net (umonkey)</author>
 </item>
 <item>
 	<title>DCP №17: интервью с Hired.Life</title>
@@ -1003,11 +1013,12 @@ Denergized, я писал его один, может он в духе Denergize
 мы расстались.  Текст может и простой, но я не мог сказать по-другому.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;(Звучит песня.)&lt;/p&gt;</description>
-	<pubDate>Tue, 14 Apr 2009 08:00:00 -0000</pubDate>
+	<pubDate>Mon, 13 Apr 2009 20:00:00 -0000</pubDate>
 	<guid>http://www.deadchannel.ru/podcasts/dcp-17-hired-life.html</guid>
-	<enclosure url="http://umonkey.s3.amazonaws.com/public/justin.forest/2010/10/31/dcp-17-20090414.mp3" type="audio/mpeg"/>
+	<enclosure url="http://umonkey.s3.amazonaws.com/public/justin.forest/2010/10/31/dcp-17-20090414.mp3" type="audio/mpeg" length="1"/>
 	<category>interviews</category>
 	<category>podcasts</category>
+	<author>hex@umonkey.net (umonkey)</author>
 </item>
 <item>
 	<title>Рецензия на альбом «Never» группы The-Pulsar</title>
@@ -1048,9 +1059,10 @@ Denergized, я писал его один, может он в духе Denergize
 сокровенном, в сердце вашем, центре, а не на периферии.  И, на мой взгляд
 The-Pulsar&amp;nbsp;— одни из них.&lt;/p&gt;
 &lt;p&gt;Имеющий уши&amp;nbsp;— да услышит...&lt;/p&gt;</description>
-	<pubDate>Mon, 23 Feb 2009 09:00:00 -0000</pubDate>
+	<pubDate>Sun, 22 Feb 2009 21:00:00 -0000</pubDate>
 	<guid>http://www.deadchannel.ru/reviews/the-pulsar-never.html</guid>
 	<category>reviews</category>
+	<author>hex@umonkey.net (umonkey)</author>
 </item>
 </channel>
 </rss>

@@ -146,6 +146,9 @@ a:
   padding: 0;
   list-style-type: none;
 
+  p:
+    margin: 0;
+
   .date:
     display: inline-block;
     color: gray;
@@ -155,8 +158,15 @@ a:
     margin-left: -60px;
     margin-right: 5px;
 
+  li:
+    margin: 0 0 .5em;
+
   li a:
     font-size: 110%;
+
+  .summary:
+    color: gray;
+    margin: 0 0 .5em;
 
 
 #tcloud:

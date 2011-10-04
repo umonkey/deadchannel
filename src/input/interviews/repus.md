@@ -1,7 +1,7 @@
 title: Интервью с Вааваном (Repus Tuto Matos, Black Room Community)
 labels: interviews
 date: 2010-12-06
-author: hex
+author: umonkey
 ---
 Недавно в Питере прошёл фестиваль [Black Room Fest
 II](http://vk.com/event19869561), организованный группой [Black Room
