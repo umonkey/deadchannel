@@ -4,8 +4,9 @@
   <head>
     <base href="/"/>
     <meta http-equiv="Content-Type" content="text/html; charset={{ __encoding__ }}" />
-    <title>{{ page.get('title', 'Dead Channel') }} — Dead Channel</title>
+    <title>{{ page.get('title', 'Dead Channel') }}</title>
     <meta name="keywords" content="{{ page.get("keywords", "industrial music, индустриальная музыка, dark scene, тёмная сцена, ebm, interviews, интервью") }}" />
+    <meta name="description" content="{{ page.get('summary') }}"/>
 
     <link rel="stylesheet" type="text/css" href="/style.css" media="screen, projection"/>
     <link rel="stylesheet" type="text/css" href="/style.css" media="handheld"/>
@@ -14,6 +15,7 @@
     <link rel="alternate" type="application/rss+xml" title="Все записи" href="{{ page.get('rss', 'http://feeds.feedburner.com/deadchannel/exclusive') }}"/>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
     <script type="text/javascript" src="/scripts.js"></script>
+    <script type="text/javascript" src="http://vkontakte.ru/js/api/share.js?11" charset="windows-1251"></script>
     <!-- Парсер CleverCSS пока не справляется с юникодом и кавычками, поэтому вынес сюда. -->
     <style type="text/css">#content blockquote p:first-child:before { content: '„'; }</style>
     <!-- Google Analytics -->
@@ -39,7 +41,7 @@
         <h1>{{ page.get('title') }}{{ page_hlink(page) }}</h1>
         {{ page_meta(page) }}
         {{ embed(page) }}
-        <div id="page">{{ __content__ }}</div>
+        <div id="page">{{ __content__ }}{{ buttons(page) }}</div>
         {{ comments(page) }}
       </div><!-- #content -->
       <div id="footer">
