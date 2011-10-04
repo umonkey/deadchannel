@@ -8,6 +8,18 @@ comment_labels: [blog, podcast, video]
 flattr_name: umonkey
 flattr_labels: [blog, video, podcast]
 
+buttons:
+  labels: [podcast, interviews, knowledge, concerts]
+  items:
+  - type: vk_share
+    image: /files/btn_vkontakte.png
+    title: Поделиться ВКонтакте
+    link: "http://vkontakte.ru/share.php?url=%(url)s"
+  - type: flattr
+    image: /files/btn_flattr.png
+    title: Поддержать материально
+    link: "https://flattr.com/submit/auto?user_id=umonkey&amp;url=%(url)s&amp;title=%(title)s&amp;description=%(summary)s&amp;language=ru_RU&amp;tags=%(labels)s&amp;category=%(category)s"
+
 authors:
 - name: umonkey
   fullname: Хекс

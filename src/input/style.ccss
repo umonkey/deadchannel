@@ -108,6 +108,12 @@ a:
     font-size: 80%;
     color: gray;
 
+  .share_buttons:
+    img:
+      border: none;
+    a:
+      margin: 0 1em 0 0;
+
 #page:
   &> p:
     margin-right: 60px;

@@ -406,21 +406,3 @@ def shorturl(url):
     if url.endswith("index.html"):
         url = url[:-10]
     return url
-
-
-def buttons(page):
-    """Renders the share buttons if necessary."""
-    if not page.get("date"):
-        return ""
-
-    buttons = ["vk", "flattr"]
-    url = "http://www.deadchannel.ru/" + shorturl(page.get("url"))
-
-    output = u""
-    for button in buttons:
-        if button == "vk":
-            output += u"<script type='text/javascript'>document.write(VK.Share.button(false,{type: 'button', text: 'Сохранить'}));</script>"
-    
-    if len(output):
-        output = u"<div class='buttons'>" + output +  u"</div>"
-    return output
