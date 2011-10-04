@@ -10,6 +10,7 @@ flattr_labels: [blog, video, podcast]
 
 authors:
 - name: umonkey
+  fullname: Хекс
   email: hex@umonkey.net
   profile: "https://profiles.google.com/justin.forest/about"
 - name: jeteir
