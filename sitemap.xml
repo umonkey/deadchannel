@@ -172,6 +172,11 @@
     <priority>0.4</priority>
 </url>
 <url>
+    <loc>http://www.deadchannel.ru/reviews/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+</url>
+<url>
     <loc>http://www.deadchannel.ru/reviews/ruare.html</loc>
     <lastmod>2010-12-30</lastmod>
     <changefreq>monthly</changefreq>

@@ -28,6 +28,7 @@ tagtitles = {
     'knowledge': u'ликбез',
     'podcasts': u'подкасты',
     'news': u'новости',
+    'reviews': u'рецензии',
 }
 
 def get_post_labels(post):
