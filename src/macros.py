@@ -15,6 +15,7 @@ import urllib
 import urlparse
 
 import poolemonkey
+import poolemonkey.config as config
 
 poolemonkey.init(globals())
 
@@ -382,11 +383,7 @@ def embed(page):
 
 def comments(page):
     if 'labels' in page or is_news_page(page):
-        settings = ''
-        if page.has_key('disqus_url'):
-            settings += 'var disqus_url = "'+ page['disqus_url'] +'";'
-        else:
-            settings += 'var disqus_identifier = "'+ page.url +'";'
+        settings = 'var disqus_url = "%s";' % page.get("disqus_url", fqurl(page.get("url")))
         return u'<div id="cwrapper"><div id="disqus_thread"></div><script type="text/javascript">if (window.location.href.indexOf("http://localhost:") == 0) var disqus_developer = 1;'+ settings +' (function() { var dsq = document.createElement(\'script\'); dsq.type = \'text/javascript\'; dsq.async = true; dsq.src = \'http://deadchannel.disqus.com/embed.js\'; (document.getElementsByTagName(\'head\')[0] || document.getElementsByTagName(\'body\')[0]).appendChild(dsq); })();</script><noscript><div>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=deadchannel">comments powered by Disqus.</a></div></noscript></div>'
     if page.get('comments'):
         return u'<script type="text/javascript">var disqus_shortname="deadchannel";(function(){var s=document.createElement("script");s.async=true;s.type="text/javascript";s.src="http://disqus.com/forums/"+disqus_shortname+"/count.js";(document.getElementsByTagName("HEAD")[0]||document.getElementsByTagName("BODY")[0]).appendChild(s);}());</script>'
@@ -407,3 +404,9 @@ def shorturl(url):
     if url.endswith("index.html"):
         url = url[:-10]
     return url
+
+
+def fqurl(url):
+    if "://" in url:
+        return url
+    return config.Config.get()["base_url"].rstrip("/") + "/" + url.replace("/index.html", "/")
