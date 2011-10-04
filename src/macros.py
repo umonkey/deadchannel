@@ -126,7 +126,7 @@ def pagelist(pages, limit=5, label=None, show_dates=True):
         if limit is None and show_dates:
             date = datetime.strptime(page.date, '%Y-%m-%d').strftime('%d.%m.%Y')
             output += u'<span>%s</span> : ' % date
-        output += u'[%s](%s)\n' % (page.get('post', page.get('title')), page.get('url'))
+        output += u'[%s](%s)\n' % (page.get('post', page.get('title')), shorturl(page.get('url')))
     if output:
         return output
     return u'Ничего нет.'
@@ -140,12 +140,12 @@ def pagelist2(pages, limit=None, label=None, show_dates=True):
             date = u''
         output += u'<li><p>%(date)s<a href="%(url)s">%(title)s</a></p>' % {
             'title': page.get('title'),
-            'url': page.get('url'),
+            'url': shorturl(page.get('url')),
             'date': date,
         }
         if page.get('summary'):
             output += u'<p class="summary">%s</p>' % page.get('summary')
-        output += u'</li>'
+        output += u'</li>\n'
     if not output:
         return u'Ничего нет.'
     return u'<ul class="pagelist">' + output + u'</ul>'
@@ -530,3 +530,9 @@ def title(page):
     elif page.url != 'index.html':
         t = '<a href="/index.html">' + t + '</a>'
     return t
+
+
+def shorturl(url):
+    if url.endswith("index.html"):
+        url = url[:-10]
+    return url
