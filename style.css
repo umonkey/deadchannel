@@ -113,12 +113,33 @@ a:hover {
   color: gray;
 }
 
-#content .share_buttons img {
-  border: none;
+#content .share_buttons {
+  border: solid 1px #dddddd;
+  padding: 2px 4px;
+  margin-left: -5px;
 }
 
 #content .share_buttons a {
-  margin: 0 1em 0 0;
+  margin: 0 0 0 .5em;
+  background-position: top left;
+  background-repeat: no-repeat;
+  padding: 0 4px 0 18px;
+}
+
+#content .share_buttons a.vkontakte {
+  background-image: url(/files/share/16/vkontakte.png);
+}
+
+#content .share_buttons a.facebook {
+  background-image: url(/files/share/16/facebook.png);
+}
+
+#content .share_buttons a.twitter {
+  background-image: url(/files/share/16/twitter.png);
+}
+
+#content .share_buttons a.flattr {
+  background-image: url(/files/share/16/flattr.png);
 }
 
 #page> p {

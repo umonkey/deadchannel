@@ -109,10 +109,28 @@ a:
     color: gray;
 
   .share_buttons:
-    img:
-      border: none;
+    border: solid 1px #ddd;
+    padding: 2px 4px;
+    margin-left: -5px;
+
     a:
-      margin: 0 1em 0 0;
+      margin: 0 0 0 .5em;
+      background-position: top left;
+      background-repeat: no-repeat;
+      padding: 0 4px 0 18px;
+
+    a.vkontakte:
+      background-image: url(/files/share/16/vkontakte.png);
+
+    a.facebook:
+      background-image: url(/files/share/16/facebook.png);
+
+    a.twitter:
+      background-image: url(/files/share/16/twitter.png);
+
+    a.flattr:
+      background-image: url(/files/share/16/flattr.png);
+
 
 #page:
   &> p:

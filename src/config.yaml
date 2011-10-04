@@ -10,19 +10,24 @@ flattr_labels: [blog, video, podcast]
 
 buttons:
   labels: [podcast, interviews, knowledge, concerts]
+  prefix: "Поделиться: "
   items:
-  - type: vk_share
-    image: /files/btn_vkontakte.png
+  - type: vkontakte
     title: Поделиться ВКонтакте
     link: "http://vkontakte.ru/share.php?url=%(url)s"
+    caption: ВКонтакте
   - type: facebook
-    image: /files/btn_facebook.png
     title: Поделиться в Facebook
     link: "http://www.facebook.com/sharer/sharer.php?u=%(url)s&amp;t=%(title)s"
+    caption: Facebook
+  - type: twitter
+    title: Отправить в Twitter
+    caption: Twitter
+    link: "https://twitter.com/intent/tweet?text=%(title)s%%3A+%(url)s"
   - type: flattr
-    image: /files/btn_flattr.png
     title: Поддержать материально
     link: "https://flattr.com/submit/auto?user_id=umonkey&amp;url=%(url)s&amp;title=%(title)s&amp;description=%(summary)s&amp;language=ru_RU&amp;tags=%(labels)s&amp;category=%(category)s"
+    caption: Flattr
 
 authors:
 - name: umonkey
