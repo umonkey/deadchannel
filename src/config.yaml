@@ -15,6 +15,10 @@ buttons:
     image: /files/btn_vkontakte.png
     title: Поделиться ВКонтакте
     link: "http://vkontakte.ru/share.php?url=%(url)s"
+  - type: facebook
+    image: /files/btn_facebook.png
+    title: Поделиться в Facebook
+    link: "http://www.facebook.com/sharer/sharer.php?u=%(url)s&amp;t=%(title)s"
   - type: flattr
     image: /files/btn_flattr.png
     title: Поддержать материально
