@@ -9,7 +9,7 @@ flattr_name: umonkey
 flattr_labels: [blog, video, podcast]
 
 buttons:
-  labels: [podcast, interviews, knowledge, concerts]
+  labels: [podcast, interviews, knowledge, concerts, reviews, articles]
   prefix: "Поделиться: "
   items:
   - type: vkontakte
