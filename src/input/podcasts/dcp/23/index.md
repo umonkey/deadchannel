@@ -14,4 +14,9 @@ summary: О тёмной сцене, концертах и лейблах.
 - Причины работы с лейблами, оценка их эффективности.
 - О диджейских клубных вечеринках.
 
+Музыка:
+
+- [Wavefall, «Dance With Me»][2]
+
 [1]: http://wavefall-music.com/
+[2]: http://www.lastfm.ru/music/Wavefall/_/Dance+With+Me
