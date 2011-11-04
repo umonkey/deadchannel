@@ -14,10 +14,10 @@ import sys
 import urllib
 import urlparse
 
-import poolemonkey
-import poolemonkey.config as config
+from poolemonkey import config, init
+from poolemonkey.labels import filter_pages
 
-poolemonkey.init(globals())
+init(globals())
 
 page = { 'title': 'untitled page' }
 
@@ -136,19 +136,25 @@ def pagelist(pages, limit=5, label=None, show_dates=True):
 
 
 def pagelist2(pages, limit=None, label=None, show_dates=True):
+    pages = filter_pages(pages, label, with_dates=False)
+    pages.sort(key=lambda p: (p.get("date"), p.url), reverse=True)
+
     output = u''
-    for page in filterpages(pages, limit, label):
-        date = u'<span class="date">%s </span>' % datetime.strptime(page.date, '%Y-%m-%d').strftime('%d.%m.%y')
-        if not show_dates:
-            date = u''
-        output += u'<li><p>%(date)s<a href="%(url)s">%(title)s</a></p>' % {
-            'title': page.get('title'),
-            'url': shorturl(page.get('url')),
-            'date': date,
-        }
-        if page.get('summary'):
-            output += u'<p class="summary">%s</p>' % page.get('summary')
-        output += u'</li>\n'
+    for page in pages:
+        try:
+            date = u'<span class="date">%s </span>' % datetime.strptime(page.date, '%Y-%m-%d').strftime('%d.%m.%y')
+            if not show_dates:
+                date = u''
+            output += u'<li><p>%(date)s<a href="%(url)s">%(title)s</a></p>' % {
+                'title': page.get('title'),
+                'url': shorturl(page.get('url')),
+                'date': date,
+            }
+            if page.get('summary'):
+                output += u'<p class="summary">%s</p>' % page.get('summary')
+            output += u'</li>\n'
+        except Exception, e:
+            print "ERROR listing page %s: %s" % (page.url, e)
     if not output:
         return u'Ничего нет.'
     return u'<ul class="pagelist">' + output + u'</ul>'

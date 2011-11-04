@@ -1,6 +1,6 @@
 title: DCP №19: о концерте Sector 516
 date: 2010-09-11
-labels: podcasts, concerts
+labels: podcast, concerts
 file: http://files.mirkforce.net/justin.forest/2010/09/19/dcp-19-20100911.mp3
 author: umonkey
 ---

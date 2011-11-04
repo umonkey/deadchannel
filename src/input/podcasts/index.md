@@ -11,6 +11,6 @@ rss: /podcasts.xml
 
 ### Архив выпусков
 
-{{ pagelist2(pages, label='podcasts') }}
+{{ pagelist2(pages, label='podcast') }}
 
 [rss]: /podcasts.xml

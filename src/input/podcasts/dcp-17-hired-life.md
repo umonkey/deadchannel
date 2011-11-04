@@ -1,5 +1,5 @@
 title: DCP №17: интервью с Hired.Life
-labels: interviews, podcasts
+labels: interviews, podcast
 file: http://umonkey.s3.amazonaws.com/public/justin.forest/2010/10/31/dcp-17-20090414.mp3
 date: 2009-04-14
 author: umonkey

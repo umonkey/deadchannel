@@ -167,6 +167,18 @@
     <priority>0.4</priority>
 </url>
 <url>
+    <loc>http://www.deadchannel.ru/podcasts/dcp/22/</loc>
+    <lastmod>2011-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+</url>
+<url>
+    <loc>http://www.deadchannel.ru/podcasts/dcp/23/</loc>
+    <lastmod>2011-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+</url>
+<url>
     <loc>http://www.deadchannel.ru/podcasts/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
