@@ -7,4 +7,4 @@ rss: /knowledge.xml
 популярных группах и песнях.  К сожалению, на данный момент была написана только
 одна статья.
 
-{{ pagelist2(pages, label='knowledge') }}
+{{ pagelist(pages, label='knowledge') }}

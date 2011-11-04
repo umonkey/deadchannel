@@ -7,4 +7,4 @@ rss: /concerts.xml
 сайта.  Материала пока мало, но его планируется дополнять.  Присылайте, если
 есть что, на info@deadchannel.ru.
 
-{{ pagelist2(pages, label='concerts') }}
+{{ pagelist(pages, label='concerts') }}

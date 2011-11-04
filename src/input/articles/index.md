@@ -5,4 +5,4 @@ rss: /articles.xml
 
 Здесь собраны статьи, написанные специально для Dead Channel.
 
-{{ pagelist2(pages, label='articles') }}
+{{ pagelist(pages, label='articles') }}

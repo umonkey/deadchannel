@@ -5,4 +5,4 @@ rss: /interviews.xml
 
 Здесь собраны интервью, взятые разными людьми специально для Dead Channel.
 
-{{ pagelist2(pages, label='interviews') }}
+{{ pagelist(pages, label='interviews') }}

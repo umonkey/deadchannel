@@ -11,6 +11,7 @@ import os.path
 import re
 import shutil
 import sys
+import time
 import urllib
 import urlparse
 
@@ -41,8 +42,6 @@ def get_post_labels(post):
         labels.append('podcasts')
     if post.url.startswith('blog.') and post.url != 'blog.html' and 'blog' not in labels:
         labels.append('blog')
-    if is_news_page(post):
-        labels.append('news')
     return sorted(labels)
 
 
@@ -91,14 +90,6 @@ def get_tag_cloud(posts):
     return output
 
 
-def is_news_page(page):
-    if not page.url.startswith('news/'):
-        return False
-    if page.url.startswith('news/index.'):
-        return False
-    return True
-
-
 def page_classes(page):
     """
     Возвращает строку с классами CSS для поста.
@@ -111,39 +102,16 @@ def page_classes(page):
     return u''
 
 
-def filterpages(pages, limit, label):
-    pages = [page for page in pages if 'date' in page]
-    if label is not None:
-        pages = [page for page in pages if page.has_key('labels') and label in get_post_labels(page)]
-    if label != 'news':
-        pages = [page for page in pages if not is_news_page(page)]
-    pages = sorted(pages, key=lambda p: p.get('date'), reverse=True)
-    if limit:
-        pages = pages[:limit]
-    return pages
-
-def pagelist(pages, limit=5, label=None, show_dates=True):
-    output = u''
-    for page in filterpages(pages, limit, label):
-        output += u'  * '
-        if limit is None and show_dates:
-            date = datetime.strptime(page.date, '%Y-%m-%d').strftime('%d.%m.%Y')
-            output += u'<span>%s</span> : ' % date
-        output += u'[%s](%s)\n' % (page.get('post', page.get('title')), shorturl(page.get('url')))
-    if output:
-        return output
-    return u'Ничего нет.'
-
-
-def pagelist2(pages, limit=None, label=None, show_dates=True):
-    pages = filter_pages(pages, label, with_dates=False)
-    pages.sort(key=lambda p: (p.get("date"), p.url), reverse=True)
+def pagelist(pages, limit=None, label=None, show_dates=True):
+    pages = filter_pages(pages, label, with_dates=show_dates)
+    pages.sort(key=lambda p: (p.get("date_parsed"), p.url), reverse=True)
 
     output = u''
     for page in pages:
         try:
-            date = u'<span class="date">%s </span>' % datetime.strptime(page.date, '%Y-%m-%d').strftime('%d.%m.%y')
-            if not show_dates:
+            if show_dates:
+                date = u'<span class="date">%s </span>' % time.strftime("%d.%m.%y", page["date_parsed"])
+            else:
                 date = u''
             output += u'<li><p>%(date)s<a href="%(url)s">%(title)s</a></p>' % {
                 'title': page.get('title'),
@@ -158,33 +126,6 @@ def pagelist2(pages, limit=None, label=None, show_dates=True):
     if not output:
         return u'Ничего нет.'
     return u'<ul class="pagelist">' + output + u'</ul>'
-
-
-def newslist(pages):
-    output = u''
-    news = sorted([page for page in pages if is_news_page(page)], key=lambda p: p.url, reverse=True)
-    for page in news:
-        textra = u''
-        output += u'<li><p><a href="%(url)s">%(title)s</a></p>' % {
-            'title': page.get('title'),
-            'url': page.get('link'),
-        }
-
-        if page.get('summary'):
-            output += u'<p class="summary">%s</p>' % page.get('summary')
-
-        links = get_news_links(page)
-        if links:
-            output += links
-
-        image = get_news_picture(page)
-        if image:
-            output += u'<a href="%s">%s</a>' % (page.get('link'), image)
-
-        output += u'</li>'
-    if not output:
-        return u'Ничего нет.'
-    return u'<ul class="pagelist news">' + output + u'</ul>'
 
 
 def get_news_picture(page):
@@ -305,17 +246,6 @@ def hook_preconvert_sources():
             page.source += u'\n\n_Этот материал раньше находился [по другому адресу](%s), там могут быть комментарии._' % page['source']
 
 
-def hook_preconvert_news():
-    for page in pages:
-        if is_news_page(page):
-            filename = os.path.splitext(page.url)[0] + '.jpg'
-            realname = os.path.join('input', filename)
-            if os.path.exists(realname):
-                page.source += u'\n\n<a title="Открыть новость" href="%s"><img class="illustration" src="%s" alt="illustration"/></a>' % (page.get('link'), page.get('image'))
-            date = datetime.strptime(page.url[5:13], '%Y%m%d')
-            page['date'] = date.strftime('%Y-%m-%d')
-
-
 def hook_preconvert_typo():
     """
     Улучшение типографики.
@@ -388,7 +318,7 @@ def embed(page):
     }
 
 def comments(page):
-    if 'labels' in page or is_news_page(page):
+    if 'labels' in page:
         settings = 'var disqus_url = "%s";' % page.get("disqus_url", fqurl(page.get("url")))
         return u'<div id="cwrapper"><div id="disqus_thread"></div><script type="text/javascript">if (window.location.href.indexOf("http://localhost:") == 0) var disqus_developer = 1;'+ settings +' (function() { var dsq = document.createElement(\'script\'); dsq.type = \'text/javascript\'; dsq.async = true; dsq.src = \'http://deadchannel.disqus.com/embed.js\'; (document.getElementsByTagName(\'head\')[0] || document.getElementsByTagName(\'body\')[0]).appendChild(dsq); })();</script><noscript><div>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=deadchannel">comments powered by Disqus.</a></div></noscript></div>'
     if page.get('comments'):
