@@ -346,3 +346,9 @@ def fqurl(url):
     if "://" in url:
         return url
     return config.Config.get()["base_url"].rstrip("/") + "/" + url.replace("/index.html", "/")
+
+
+def dlpodcast(page):
+    if not page.get("file", "").endswith(".mp3"):
+        return ""
+    return u"<p><a title='Скачать MP3 файл' href='%s'>Скачать запись</a>.</p>" % page["file"]
