@@ -5,6 +5,8 @@ file: http://files.umonkey.net/audio/podcast/dcp/dcp-22.mp3
 filesize: 46045005
 author: umonkey
 summary: Об отношении к тёмной сцене и музыке вообще.
+illustration: /podcasts/dcp/22/photo.jpg
+duration: 2763
 ---
 Интервью с [Алексеем Бойцовым][1] из группы [The-Pulsar][2].
 

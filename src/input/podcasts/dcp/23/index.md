@@ -5,6 +5,8 @@ file: http://files.umonkey.net/audio/podcast/dcp/dcp-23.mp3
 filesize: 22995202
 author: umonkey
 summary: О тёмной сцене, концертах и лейблах.
+illustration: /podcasts/dcp/23/photo.jpg
+duration: 1170
 ---
 - О старом материале [Wavefall][1].
 - Причины ухода в dark-electro.
