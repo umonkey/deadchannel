@@ -155,6 +155,12 @@
     <priority>0.4</priority>
 </url>
 <url>
+    <loc>http://www.deadchannel.ru/podcasts/dcp/12/</loc>
+    <lastmod>2009-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+</url>
+<url>
     <loc>http://www.deadchannel.ru/podcasts/dcp/20/</loc>
     <lastmod>2011-06-07</lastmod>
     <changefreq>monthly</changefreq>

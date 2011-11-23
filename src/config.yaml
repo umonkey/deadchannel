@@ -8,6 +8,8 @@ comment_labels: [blog, podcast, video]
 flattr_name: umonkey
 flattr_labels: [blog, video, podcast]
 
+sitemap: ../sitemap.xml
+
 buttons:
   labels: [podcast, interviews, knowledge, concerts, reviews, articles]
   prefix: "Поделиться: "

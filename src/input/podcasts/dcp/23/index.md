@@ -1,6 +1,6 @@
 title: DCP №23, интервью: Вячеслав Бусыгин (Wavefall)
 date: 2011-11-18
-labels: podcast, interviews, queue
+labels: podcast, interviews
 file: http://files.umonkey.net/audio/podcast/dcp/dcp-23.mp3
 filesize: 22995202
 author: umonkey

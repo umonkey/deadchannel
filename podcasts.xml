@@ -9,8 +9,32 @@
 <title>Подкаст Dead Channel</title>
 <description>Мысли и интервью на тему тёмной сцены.</description>
 <link>http://www.deadchannel.ru/podcasts/</link>
-<pubDate>Thu, 03 Nov 2011 20:00:00 -0000</pubDate>
-<lastBuildDate>Thu, 03 Nov 2011 20:00:00 -0000</lastBuildDate>
+<pubDate>Thu, 17 Nov 2011 20:00:00 -0000</pubDate>
+<lastBuildDate>Thu, 17 Nov 2011 20:00:00 -0000</lastBuildDate>
+<item>
+	<title>DCP №23, интервью: Вячеслав Бусыгин (Wavefall)</title>
+	<link>http://www.deadchannel.ru/podcasts/dcp/23/</link>
+	<description>&lt;ul&gt;
+&lt;li&gt;О старом материале &lt;a href="http://wavefall-music.com/"&gt;Wavefall&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Причины ухода в dark-electro.&lt;/li&gt;
+&lt;li&gt;Оценка сегодняшнего состояния сцены.&lt;/li&gt;
+&lt;li&gt;О возможности заработать на жизнь концертами или музыкой вообще.&lt;/li&gt;
+&lt;li&gt;Расшифровка сценического образа.&lt;/li&gt;
+&lt;li&gt;Причины работы с лейблами, оценка их эффективности.&lt;/li&gt;
+&lt;li&gt;О диджейских клубных вечеринках.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Музыка:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.lastfm.ru/music/Wavefall/_/Dance+With+Me"&gt;Wavefall, «Dance With Me»&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+	<pubDate>Thu, 17 Nov 2011 20:00:00 -0000</pubDate>
+	<guid>http://www.deadchannel.ru/podcasts/dcp/23/index.html</guid>
+	<enclosure url="http://files.umonkey.net/audio/podcast/dcp/dcp-23.mp3" type="audio/mpeg" length="22995202"/>
+	<category>podcast</category>
+	<category>interviews</category>
+	<author>hex@umonkey.net (umonkey)</author>
+	<itunes:image href="/podcasts/dcp/23/photo.jpg"/>
+</item>
 <item>
 	<title>DCP №22, интервью: Алексей Бойцов (The-Pulsar)</title>
 	<link>http://www.deadchannel.ru/podcasts/dcp/22/</link>
@@ -234,6 +258,16 @@ Denergized, я писал его один, может он в духе Denergize
 	<guid>http://www.deadchannel.ru/podcasts/dcp-17-hired-life.html</guid>
 	<enclosure url="http://umonkey.s3.amazonaws.com/public/justin.forest/2010/10/31/dcp-17-20090414.mp3" type="audio/mpeg" length="1"/>
 	<category>interviews</category>
+	<category>podcast</category>
+	<author>hex@umonkey.net (umonkey)</author>
+</item>
+<item>
+	<title>DCP №12</title>
+	<link>http://www.deadchannel.ru/podcasts/dcp/12/</link>
+	<description>&lt;p&gt;Описание отсутствует.&lt;/p&gt;</description>
+	<pubDate>Sun, 01 Mar 2009 21:00:00 -0000</pubDate>
+	<guid>http://www.deadchannel.ru/podcasts/dcp/12/index.html</guid>
+	<enclosure url="http://files.umonkey.net/audio/podcast/dcp/dcp-12.mp3" type="audio/mpeg" length="31951922"/>
 	<category>podcast</category>
 	<author>hex@umonkey.net (umonkey)</author>
 </item>
