@@ -13,4 +13,4 @@ update: build
 	-git push
 
 serve:
-	poole.py --serve
+	PYTHONPATH=$(PWD) poole.py --serve
