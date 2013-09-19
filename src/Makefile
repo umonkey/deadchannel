@@ -1,7 +1,8 @@
 all: build
 
 build:
-	python ./poole.py --build --ignore '^\.|~$$|\.ccss$$' # --base-url=http://www.deadchannel.ru
+	@echo "ОТКЛЮЧЕНО. Сборка не работает ввиду остутствия модуля poolemonkey."
+	@#python ./poole.py --build --ignore '^\.|~$$|\.ccss$$' # --base-url=http://www.deadchannel.ru
 
 update: build
 	-git --work-tree=output --git-dir=output/.git add .
